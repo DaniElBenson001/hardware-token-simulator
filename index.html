@@ -12,25 +12,13 @@
 <body>
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
-          <!-- Links -->
-          <!-- <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">CONTACT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">GLOBUS BANK</a>
-            </li>
-        </ul> -->
         </div>
     </nav>  
     <p class="h1 text-center heading">HARDWARE TOKEN SIMULATOR</p>
     <div class="container">
+      <!-- <div class="row"> -->
+        <p id="reset" class="col-12 timer text-start"></p>
+      <!-- </div>/ -->
         <div class="row">
           <div class="col-12" id="numberList">
             <div class="box" id="box1"></div>
@@ -40,12 +28,23 @@
             <div class="col-12">
               <a href="#" id="generate" class="red-button" onclick="generateRandomNumbers()">GENERATE</a>
             </div>
+            <p style="text-align: center !important; color: black; font-weight: bolder; opacity: 40%; margin: 13px;">
+              Please Note that your Token Code will be automatically copied to your clipboard upon Generation
+            </p>
+            <!-- <div class="col-4">
+              <a href="#" id="copyInput" class="blue-button" onclick="copyFunction()">COPY</a>
+            </div> -->
           </div>
         </div>
       </div>
 
     <script src="./Projects/GLOBUS_HARDWARE_TOKEN_SIMULATOR/js/main.js"></script>
     <!-- <script src="./Projects/GLOBUS_HARDWARE_TOKEN_SIMULATOR/js/timeTest.js"></script> -->
-    <footer>©2023 Globus Bank Limited</footer>
+    <footer>
+      &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      Globus Bank Limited</footer>
 </body>
 </html>
